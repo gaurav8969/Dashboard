@@ -2,8 +2,10 @@ function popMenu() {
     var style = document.getElementById('style');
     if (style.href == "file:///home/yash/repos/Dashboard/style.css") {
         style.href = "menu.css";
+        console.log("Switching to menu!");
     } else {
         style.href = 'style.css';
+        console.log("Switching to dashboard!");
     }
 }
 
