@@ -340,7 +340,8 @@ body{
     }
 
     #hamburgerMenu{
-        display:block
+        display:block;
+        margin-left:0;
     }
 
     .btns>div{
