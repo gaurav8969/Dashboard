@@ -21,6 +21,9 @@ body{
     background-color: #000308;
     grid-row:1/3;
     grid-column: 1/2;
+    position:sticky;
+    top:0;
+    height:100vh;
 }
 
 #main{
@@ -30,6 +33,7 @@ body{
     grid-column:2/3;
     display:grid;
     grid-template-columns: 37% 37% 1fr;
+    min-width:800px;
 }
 
 #night{
@@ -277,7 +281,7 @@ body{
         min-height:100vh;
         display:grid;
         grid-template-columns: 75px 1fr;
-        grid-template-rows:150px 1fr;
+        grid-template-rows:180px 1fr;
         margin:0;
         padding:0;
         box-sizing: border-box;
@@ -290,9 +294,12 @@ body{
         grid-row:1/2;
     }
 
+    #headerTop{
+        margin-right:15px;
+        margin-bottom: 0;
+    }
+
     #sideBar{
-        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-        font-size:1.2em;
         background-color: #000308;
         grid-row:1/3;
         grid-column: 1/2;
@@ -312,6 +319,31 @@ body{
         display:grid;
         grid-template-rows: 1fr 1fr;
         grid-template-columns: 1fr;
+        min-width:unset;
+    }
+
+    #searchbox{
+        max-width:150px;
+    }
+
+    .btns>div{
+        max-width:50px;
+        font-size:0.8em;
+    }
+
+    #headerBottom{
+        display:block;
+        height:130;
+    }
+
+    #headerProfile{
+        font-size:0.8em;
+        margin-bottom:8px;
+    }
+
+    #headerProfile>div>div:nth-child(2){
+        font-size:12px;
+        text-shadow: 0.1px 0.1px black;
     }
 
     #projects{
