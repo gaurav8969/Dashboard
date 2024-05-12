@@ -308,10 +308,6 @@ body{
 }
 
 @media(max-width:600px){
-    html, body{
-        /* overflow-x:hidden; */
-    }
-
     body{
         min-height:100vh;
         display:grid;
@@ -327,12 +323,10 @@ body{
     }
 
     #header{
-        width:100%;
         grid-column: 1/2;
     }
 
     #main{
-        width:100%;
         height:fit-content;
         background-color: #dedede;
         grid-row:2/3;
@@ -354,6 +348,10 @@ body{
     #headerTop{
         margin-right:15px;
         margin-bottom: 0;
+    }
+
+    #headerTop>.right{
+        width:unset;
     }
 
     #headerBottom{
