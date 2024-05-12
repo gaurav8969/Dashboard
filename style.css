@@ -3,7 +3,7 @@ body{
     min-width:1080px;
     display:grid;
     grid-template-columns: 275px 1fr;
-    grid-template-rows:190px 1fr;
+    grid-template-rows:150px 1fr;
     margin:0;
     padding:0;
     box-sizing: border-box;
