@@ -1,5 +1,6 @@
 body{
     min-height:100vh;
+    min-width:1080px;
     display:grid;
     grid-template-columns: 275px 1fr;
     grid-template-rows:190px 1fr;
@@ -66,6 +67,10 @@ body{
     font-size:2.2em;
 }
 
+#closePopup{
+    display:none;
+}
+
 .icon{
     fill:white;
     margin-left:30px;
@@ -104,7 +109,7 @@ body{
 #searchbox{
     flex-grow:1;
     flex-shrink:1;
-    max-width:600px;
+    max-width:60%;
     height:35px;
     margin-left:30px;
     background-color: whitesmoke;
@@ -147,13 +152,14 @@ body{
     display:flex;
     align-items: center;
     gap:10px;
-    margin-left:-10px;
+    margin-left:5px;
     margin-bottom:10px;
 }
 
 #hamburgerMenu{
     width:36px;
     height:36px;
+    display: none;
 }
 
 #headerProfile{
@@ -283,10 +289,6 @@ body{
 }
 
 @media(max-width:1000px){
-    #searchbox{
-        max-width:300px;
-    }
-
     #section1{
         margin-top:100px;
         margin-bottom:100px;
@@ -309,6 +311,7 @@ body{
 
 @media(max-width:600px){
     body{
+        min-width:unset;
         min-height:100vh;
         display:grid;
         grid-template-columns:1fr;
@@ -336,8 +339,8 @@ body{
         grid-template-columns: 1fr;
     }
 
-    #searchbox{
-        max-width:150px;
+    #hamburgerMenu{
+        display:block
     }
 
     .btns>div{

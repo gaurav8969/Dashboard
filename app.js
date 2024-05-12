@@ -1,11 +1,13 @@
-// function enableAside(){
-//     // Define the query
-//     const mediaQuery = window.matchMedia('(min-width: 600px)')
-//     if(mediaQuery.matches){
-//         let sidebar = document.getElementById("hamburgerMenu");
-//         sidebar.style = "
-//         ";
-//     }
-// }
+function popMenu() {
+    var style = document.getElementById('style');
+    if (style.href == "file:///home/yash/repos/Dashboard/style.css") {
+        style.href = "menu.css";
+    } else {
+        style.href = 'style.css';
+    }
+}
 
-// document.getElementById("hamburgerMenu").addEventListener("click", displayDate); 
+let menu = document.getElementById("hamburgerMenu");
+let closeMenu = document.getElementById("closePopup");
+menu.addEventListener("click", popMenu);
+closeMenu.addEventListener("click", popMenu);
