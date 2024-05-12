@@ -2,7 +2,7 @@ body{
     min-height:100vh;
     display:grid;
     grid-template-columns: 275px 1fr;
-    grid-template-rows:150px 1fr;
+    grid-template-rows:190px 1fr;
     margin:0;
     padding:0;
     box-sizing: border-box;
@@ -148,6 +148,8 @@ body{
     display:flex;
     align-items: center;
     gap:10px;
+    margin-left:-10px;
+    margin-bottom:10px;
 }
 
 #hamburgerMenu{
@@ -281,29 +283,9 @@ body{
     margin-left:5px;
 }
 
-@media(max-width:600px){
-    body{
-        min-height:100vh;
-        display:grid;
-        grid-template-columns: 75px 1fr;
-        grid-template-rows:180px 1fr;
-        margin:0;
-        padding:0;
-        box-sizing: border-box;
-    }
-
-    
-
-    #headerTop{
-        margin-right:15px;
-        margin-bottom: 0;
-    }
-
-    #sideBar{
-        background-color: #000308;
-        grid-row:1/3;
-        grid-column: 1/2;
-        text-align: center;
+@media(max-width:1000px){
+    #searchbox{
+        max-width:300px;
     }
 
     #section1{
@@ -311,11 +293,45 @@ body{
         margin-bottom:100px;
     }
 
+    body{
+        min-height:100vh;
+        display:grid;
+        grid-template-columns: 75px 1fr;
+        grid-template-rows:190px 1fr;
+        margin:0;
+        padding:0;
+        box-sizing: border-box;
+    }
+
+    .icon>.name, #wallpaper{
+        display:none;
+    }
+}
+
+@media(max-width:600px){
+    body{
+        min-height:100vh;
+        display:grid;
+        grid-template-columns:1fr;
+        grid-template-rows:190px 1fr;
+        margin:0;
+        padding:0;
+        box-sizing: border-box;
+    }
+
+    #sideBar{
+        display:none;
+    }
+
+    #header{
+        grid-column: 1/2;
+    }
+
     #main{
         height:fit-content;
         background-color: #dedede;
         grid-row:2/3;
-        grid-column:2/3;
+        grid-column:1/2;
         display:grid;
         grid-template-rows: 1fr 1fr;
         grid-template-columns: 1fr;
@@ -331,9 +347,15 @@ body{
         font-size:0.8em;
     }
 
+    #headerTop{
+        margin-right:15px;
+        margin-bottom: 0;
+    }
+
     #headerBottom{
         display:block;
         height:130;
+        margin-left:10px;
     }
 
     #headerProfile{
@@ -354,9 +376,5 @@ body{
     #newsTray{
         grid-row:2/3;
         grid-column: 1/2;
-    }
-    
-    .icon>.name, #wallpaper{
-        display:none;
     }
 }
